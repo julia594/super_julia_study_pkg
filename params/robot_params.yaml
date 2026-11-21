@@ -1,0 +1,7 @@
+# Параметры обычного режима (mode:=normal)
+# "/**" — подходит для узла с любым именем
+/**:
+  ros__parameters:
+    publish_frequency: 8.0
+    overflow_threshold: 80
+    topic_name: /even_numbers
