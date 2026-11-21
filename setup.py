@@ -14,16 +14,15 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='julia',
-    maintainer_email='julia@todo.todo',
-    description='TODO: Package description',
-    license='TODO: License declaration',
-    extras_require={
-        'test': [
-            'pytest',
-        ],
-    },
+    maintainer_email='kolemesinajulia@gmail.com',
+    description='ROS 2 study package',
+    license='Apache-2.0',
+    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-'time_printer = super_julia_study_pkg.time_printer:main',        ],
+            'time_printer = super_julia_study_pkg.time_printer:main',
+            'even_number_publisher = super_julia_study_pkg.even_number_publisher:main',
+            'overflow_listener = super_julia_study_pkg.overflow_listener:main',
+        ],
     },
 )
